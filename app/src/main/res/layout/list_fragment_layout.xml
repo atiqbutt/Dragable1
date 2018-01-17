@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#FFF"
+        android:id="@+id/relativeLayout">
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/backBtn"
+            android:background="@drawable/nxt"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="5dp"/>
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/nextBtn"
+            android:background="@drawable/back"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"/>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relativeLayout"
+        android:background="#fff"
+        android:drawableRight="@android:drawable/arrow_down_float"
+        android:ems="23"
+        android:padding="10dp"
+        android:singleLine="false"
+        android:text="Title"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <!--<com.github.aakira.expandablelayout.ExpandableRelativeLayout
+        android:id="@+id/expandableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:ael_expanded="false"
+        app:ael_duration="500"
+        android:layout_below="@id/title"
+        app:ael_interpolator="bounce"
+        app:ael_orientation="vertical">-->
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrol"
+        android:layout_below="@id/title"
+        >
+
+            <TextView
+                android:id="@+id/videoDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFF"
+                android:layout_below="@+id/title"
+                android:padding="5dp"
+                android:text="Description"
+                android:textSize="12sp"
+                android:visibility="gone" />
+            <!--</com.github.aakira.expandablelayout.ExpandableRelativeLayout>-->
+
+
+
+
+    </ScrollView>
+    <ListView
+        android:id="@+id/DragplayerListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scrol"
+        android:background="#e7e7e7"
+        android:layout_above="@id/adView">
+
+    </ListView>
+
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="ca-app-pub-8535523132621797/9117764786">
+    </com.google.android.gms.ads.AdView>
+
+
+</RelativeLayout>

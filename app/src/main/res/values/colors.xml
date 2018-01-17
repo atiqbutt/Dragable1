@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F08080</color>
+    <color name="colorPrimaryDark">#CD5C5C</color>
+    <color name="colorAccent">#2c3e50</color>
+
+    <color name="black">#FF000000</color>
+    <color name="blue">#0033CC</color>
+    <color name="green">#006600</color>
+    <color name="red">#BB0000</color>
+    <color name="yellow">#FFFF33</color>
+    <color name="background">#FFFACD</color>
+
+
+    <color name="photo_tint">#38101010</color>
+</resources>
+
+

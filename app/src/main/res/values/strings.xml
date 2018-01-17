@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Baby Rhymes</string>
+    <string name="title_activity_youtube_channel_list">YoutubeChannelList</string>
+
+    <string name="action_about">About</string>
+    <string name="alert_title">Attention!</string>
+    <string name="alert_message">Unable to load data. \nCheck your connection!</string>
+    <string name="alert_positive">Close</string>
+    <string name="video">Video</string>
+    <string name="info_text">This is a simple app that shows the use of YoutubeParser library.
+         &lt;br /&gt;&lt;br /&gt;You can find the source code on </string>
+    <string name="author">&lt;br /&gt;&lt;br /&gt;Written by Marco Gomiero</string>
+
+    <!-- AdMob ad unit IDs -->
+    <string name="banner_home_footer">ca-app-pub-4789001247034559/1944860153</string>
+    <!--<string name="interstitial_full_screen">ca-app-pub-066498932138293260/1769900428</string>-->
+</resources>
